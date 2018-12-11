@@ -49,7 +49,7 @@ export function _getImageTag (props, gutter = 0) {
 export function _getTouchableUnit (image, gutter = 0) {
 	return (
 		<TouchableOpacity
-          key={image.uri}
+          key={image.key}
           onPress={() => image.onPress(image.data)}
 	  activeOpacity={0.7}
 	  style={{ borderRadius: 8 }}>
